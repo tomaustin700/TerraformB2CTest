@@ -4,7 +4,7 @@ provider "azuread" {
 }
 
 resource "azuread_invitation" "b2c_user" {
-  user_email_address = "firstname.lastname@gmail.com"
+  user_email_address = "tom@tomaustin.xyz"
   user_display_name  = "Firstname Lastname"
   redirect_url       = "https://portal.azure.com"
   message {

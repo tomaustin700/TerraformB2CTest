@@ -3,6 +3,11 @@ provider "azurerm" {
   skip_provider_registration = false
 }
 
+resource "azurerm_resource_provider_registration" "aad" {
+  name = "Microsoft.AzureActiveDirectory"
+
+}
+
 resource "azurerm_aadb2c_directory" "b2c_tenant_live" {
   country_code            = "GB"
   data_residency_location = "Europe"

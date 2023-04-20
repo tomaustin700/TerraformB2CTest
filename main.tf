@@ -21,6 +21,7 @@ terraform {
 }
 
 
+
 module "b2c" {
   source = "./b2c"
 
